@@ -1,0 +1,276 @@
+.main-body {
+  height: auto;
+}
+
+.mainbody__container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 100px 64px 0;
+  box-sizing: border-box;
+}
+
+/* .vectordiv {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+} */
+
+/* Slide-in effect for the vector on page 1 */
+.vectordiv__slide-in {
+  opacity: 0;
+  transform: translateX(100%); /* Start off-screen */
+  transition: all 0.6s ease-in-out; /* Controls the transition speed and smoothness */
+}
+
+/* Once active, it slides into view */
+.vectordiv__slide-in-active {
+  opacity: 1;
+  transform: translateX(0); /* Slide back to original position */
+}
+
+/* Slide-in effect for the vector on page 2 */
+.vectordiv__slide-out {
+  opacity: 0;
+  transform: translateX(-100%); /* Slide off-screen to the right */
+  transition: all 0.6s ease-in-out;
+}
+
+.vectorcontainer {
+  height: 500px;
+  width: 100%;
+  background-color: #deeaf7;
+  border-radius: 12px;
+  /* margin-top: 100px; */
+}
+
+.vectorcontainer__header {
+  height: 112px;
+  width: 470px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.headertext {
+  font-weight: 700;
+  size: 24px;
+  color: #0a66c2;
+}
+
+.progresscounter {
+  width: 40px;
+  padding: 4px 16px;
+  box-sizing: border-box;
+  background-color: #0a66c2;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #deeaf7;
+}
+
+.vectorcontainer__progress {
+  width: 100%;
+  height: 4px;
+  background-color: #aeceec;
+  position: relative;
+}
+
+.vectorcontainer__progress--marker {
+  position: absolute;
+  height: 100%;
+  background-color: #0a66c2;
+}
+
+.vectorcontainer__imgdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* transform: translate(10px, -10px); */
+  width: 100%;
+  height: calc(100% - 116px);
+}
+
+.vectorcontainer__img {
+  height: 100%;
+  /* width: 100%; */
+}
+
+.signupForm__headerdiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-title {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.form-container {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.signupForm__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  gap: 24px;
+}
+
+.titlefirstnameandlastname {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.titlefirstnameandlastname div {
+  width: 80%;
+}
+
+label {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+input,
+select {
+  padding: 16px;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  /* width: 100%; */
+}
+
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input::placeholder,
+select::placeholder {
+  font-weight: 400;
+  font-size: 14px;
+  color: #9b9b9b;
+}
+
+.phoneandemail,
+.passwordandconfirmpassword,
+.institutionanddepartment {
+  display: flex;
+  /* width: 100%;  */
+  flex-direction: row;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.phonediv,
+.emaildiv,
+.passwordiv,
+.confirmpassworddiv,
+.institutiondiv,
+.departmentdiv {
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.formsubmit:hover {
+  background-color: #063d74;
+}
+
+.password-note {
+  display: block;
+  color: #444444;
+  font-weight: 400;
+  font-size: 14px;
+  margin: -10px 0 0px 0;
+}
+
+.password-note span {
+  color: #ff0808;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.verifyemaildiv {
+  width: 100%;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.verifyemailbtn {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 32px; */
+}
+
+.formsubmit {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-secbtn {
+  width: 115px;
+  height: 40px;
+  padding: 8px 16px 8px 16px;
+  color: #1b1b1b;
+  border-radius: 12px;
+  border: 1px #deeaf7 solid;
+  text-wrap: nowrap;
+  font-size: 14px;
+  background: none;
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  padding: 0 64px;
+  justify-content: space-between;
+  align-items: center;
+}
